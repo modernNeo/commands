@@ -13,3 +13,5 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
 alias vim="vim -c \"set clipboard=unnamedplus\""
 
 alias commands="$DIR/commands.sh"
+
+alias update_commands="$DIR/update_commands.sh"
