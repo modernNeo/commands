@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
+DIR="/opt/commands/"
 
 COMMAND_FILE_LOCATION="$DIR/commands.json"
 GIT_FILE_LOCATION="$DIR/gitOptions.json"
