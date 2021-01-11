@@ -1,37 +1,39 @@
-{ "commands" : 
+{ "commands" :
 	[
 		{
-			"name": "listing files", 
-			"description": 
+			"name": "listing files",
+			"description":
 				[
 					"du -sh *"
-				], 
+				],
 			"exec": false
 		},
 		{
-			"name": "list processes running on a given port", 
-			"description": 
+			"name": "list processes running on a given port",
+			"description":
 				[
 					"lsof -i :<portNumber> | grep LISTEN"
-				], 
+				],
 			"exec": "false"
 		},
 		{
-			"name": "open archive folders", 
-			"description" : 
+			"name": "open archive folders",
+			"description" :
 				[
-					"tar xjf Manager-0.8.3.998.tar.bz2"
-				], 
+					"tar xjf Manager-0.8.3.998.tar.bz2 -C /opt/",
+					"tar xvf dropbox.tar.gz -C /opt/",
+					"tar -xf file.tar.xz -C /opt/"
+				],
 			"exec": "false"
 		},
 		{
-			"name":"git", 
-			"description": ["-"], 
+			"name":"git",
+			"description": ["-"],
 			"exec": false
 		},
 		{
-			"name":"AUR install", 
-			"description": 
+			"name":"AUR install",
+			"description":
 				[
 					"Download snapshot link",
 					"wget https://aur.archlinux.org/cgit/aur.git/snapshot/dropbox.tar.gz",
@@ -39,32 +41,32 @@
 					"makepkg",
 					"sudo pacman -U dropbox-23.4.18-1-x86_64.pkg.tar.xz",
 					"https://www.youtube.com/watch?v=xXpO6jsbrF0&t=611s"
-				], 
+				],
 			"exec": false
 		},
 		{
-			"name":"mount external", 
-			"description": 
+			"name":"mount external",
+			"description":
 				[
 					"lsblk -f",
 					"sudo mount UUID=5b09bc13-41e4-350f-b021-e1c5e59940fb /mnt/jason-hard_drive/"
-				], 
+				],
 			"exec": false
 		},
 		{
 			"name":"mount macbook",
-			"description": 
+			"description":
 				[
 					"sudo mount -t cifs //192.168.1.64/Macintosh\\ HD /mnt/jason-macbook -o user=\"Jason Manshad\""
-				], 
+				],
 			"exec": false
 		},
 		{
-			"name":"Mount USB to WSL", 
-			"description": 
+			"name":"Mount USB to WSL",
+			"description":
 				[
 					"~/GitHub/quickRef/connect_usb.sh"
-				], 
+				],
 			"exec": true
 		},
 		{
@@ -88,10 +90,10 @@
 			"exec": false
 		},
 		{
-			"name":"install tar.gz program",
+			"name":"install zipped program",
 			"description":
 				[
-					"sudo tar -xvf program.tar.gz -C /opt/",
+					"install into /opt/",
 					"sudo ln -sf /opt/path/to/executable/file /usr/bin/program",
 					"vim ~/.local/share.applications/program.desktop //to create desktop entry"
 				],
