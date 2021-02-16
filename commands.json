@@ -103,8 +103,7 @@
 			"name": "reconnect to VPN",
 			"description":
 			[
-				"expressvpn disconnect",
-				"expressvpn connect"
+				"./expressvpn.sh"
 			],
 			"exec" : true
 		}
