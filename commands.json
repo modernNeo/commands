@@ -65,7 +65,7 @@
 			"name":"Mount USB to WSL",
 			"description":
 				[
-					"~/GitHub/quickRef/connect_usb.sh"
+					"/opt/commands/connect_usb.sh"
 				],
 			"exec": true
 		},
@@ -98,6 +98,14 @@
 					"vim ~/.local/share.applications/program.desktop //to create desktop entry"
 				],
 				"exec": "false"
+		},
+		{
+			"name": "reconnect to VPN",
+			"description":
+			[
+				"/opt/commands/expressvpn.sh"
+			],
+			"exec" : true
 		}
 	]
 }
