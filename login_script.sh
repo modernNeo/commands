@@ -9,4 +9,6 @@ alias ..='cd ..'
 alias ...='cd ../..'
 alias vim="vim -c \"set clipboard=unnamedplus\""
 
+alias killVlc='ps -ef | grep "[u]sr/bin/vlc" | awk '{print $2}' | xargs kill -9'
+
 HISTTIMEFORMAT='%Y-%m-%d %T '
