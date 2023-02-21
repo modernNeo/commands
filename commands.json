@@ -98,14 +98,6 @@
 					"vim ~/.local/share.applications/program.desktop //to create desktop entry"
 				],
 				"exec": "false"
-		},
-		{
-			"name": "reconnect to VPN",
-			"description":
-			[
-				"/opt/commands/expressvpn.sh"
-			],
-			"exec" : true
 		}
 	]
 }

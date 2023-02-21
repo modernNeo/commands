@@ -22,3 +22,11 @@ elif [ "$(uname -s)" == "Linux" ]; then
   alias mount_multimedia_files="sudo mount -t nfs the_machine.local:/volume1/5_Multimedias /home/jace/1_Home/0_Cryptomator_Encryped_Folders/5_Multimedias"
   HISTTIMEFORMAT='%Y-%m-%d %T '
 fi
+
+alias monero="sudo monero-wallet-gui"
+
+export PATH="/opt/platform-tools_r33.0.3:$PATH"
+alias xclip="xclip -selection c"
+# https://www.softwaredeveloper.blog/git-credential-storage-libsecret
+
+git config --global credential.helper /usr/share/doc/git/contrib/credential/libsecret/git-credential-libsecret
