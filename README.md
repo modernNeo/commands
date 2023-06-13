@@ -39,6 +39,9 @@ Adds reference for
 echo 255 | sudo tee -a /sys/devices/platform/i8042/serio1/subsystem/devices/serio2/speed
 echo 255 | sudo tee -a /sys/devices/platform/i8042/serio1/subsystem/devices/serio2/sensitivity
 
+xinput list-props 'TPPS/2 IBM TrackPoint'
+xinput set-prop 'TPPS/2 IBM TrackPoint' 'libinput Accel Speed' 1
+
  $ sudo tail -5 /etc/sudoers
 # See sudoers(5) for more information on "@include" directives:
 
