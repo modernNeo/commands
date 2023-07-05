@@ -77,6 +77,12 @@
 			"git reset --soft HEAD~ //opposite of git commit -m ",
 			"git reset HEAD <FILE_PATH> //opposite of git add",
 			"git checkout <FILE_PATH> //undo local changed"
-		]}
+		]},
+		{
+			"name": "undo the last X commits",
+			"description" : [
+				"git reset --hard HEAD~X"
+			]
+		}
 	]
 }
