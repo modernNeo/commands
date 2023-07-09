@@ -83,6 +83,12 @@
 			"description" : [
 				"git reset --hard HEAD~X"
 			]
+		},
+		{
+			"name": "squash the last X commits",
+			"description" : [
+				"git reset --soft HEAD~x"
+			]
 		}
 	]
 }
