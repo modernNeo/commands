@@ -29,4 +29,5 @@ export PATH="/opt/platform-tools_r33.0.3:$PATH"
 alias xclip="xclip -selection c"
 # https://www.softwaredeveloper.blog/git-credential-storage-libsecret
 
+export PATH="/opt/commands:$PATH"
 git config --global credential.helper /usr/share/doc/git/contrib/credential/libsecret/git-credential-libsecret
