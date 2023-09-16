@@ -3,7 +3,7 @@
 import subprocess
 
 _, remote_branches = subprocess.getstatusoutput(
-    "git fetch origin; git prune origin; git branch -r"
+    "git fetch --prune origin; git branch -r"
 )
 
 _, local_branches = subprocess.getstatusoutput(
