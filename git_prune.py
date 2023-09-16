@@ -20,6 +20,7 @@ for local_branch in local_branches.split("\n"):
     final_local_branches.append(f"origin/{local_branch}")
 for local_branch in final_local_branches:
     if local_branch not in remote_branches:
+        local_branch = local_branch[7:]
         cmd = f"git branch -D {local_branch}"
         print(cmd)
         subprocess.getstatusoutput(cmd)
