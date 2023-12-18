@@ -5,21 +5,14 @@ install steps
 sudo su -
 cd /opt/
 git clone https://github.com/modernNeo/commands.git
-
-if linux
-ln -sn /opt/commands/commands.sh /usr/bin/commands
-ln -sn /opt/commands/update_commands.sh /usr/bin/update_commands
-
-if mac
-ln -sn /opt/commands/commands.sh ~/.bin/commands
-ln -sn /opt/commands/update_commands.sh ~/.bin/update_commands
-
+echo '. /opt/commands/env_setter.sh' >> ~/.bashrc
 ```
 
 ## env_setter.sh
  * personalizes PS1
  * adds aliases for cd, vim and ls
- * addds command to invoke "commands.sh"
+ * addds commands to the PATH variable
+ * sets the git credential manager
 
 ## commands.sh
 this is a quick reference script to remind myself of some commands i regularly use to save myself the time of opening up man commands  
