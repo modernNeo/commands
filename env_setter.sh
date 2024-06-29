@@ -30,3 +30,5 @@ alias monero="sudo monero-wallet-gui"
 export PATH="/opt/platform-tools_r33.0.3:$PATH"
 
 export PATH="/opt/commands/bin:$PATH"
+
+export GPG_TTY=$(tty)
