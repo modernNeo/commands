@@ -12,7 +12,9 @@
 			"name": "list processes running on a given port",
 			"description":
 				[
-					"lsof -i :<portNumber> | grep LISTEN"
+					"https://linuxize.com/post/check-listening-ports-linux/",
+					"lsof -i :<portNumber> | grep LISTEN",
+					"ss -tunlp | grep <portNumber>"
 				],
 			"exec": "false"
 		},
