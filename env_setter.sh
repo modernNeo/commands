@@ -32,3 +32,5 @@ alias monero="sudo monero-wallet-gui"
 export PATH="/opt/platform-tools_r33.0.3:$PATH"
 
 export PATH="/opt/commands/bin:$PATH"
+
+export gcfiles="git status | grep "modified:" | awk '{print $2}'"
