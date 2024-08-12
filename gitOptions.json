@@ -1,4 +1,4 @@
-{ "gitOptions" : 
+{ "gitOptions" :
 	[
 		{"name": "discord local commits", "description": ["git reset --hard origin/<branch_name>"]},
 		{"name": "unstage any staged changes for the given file(s)", "description": ["git reset -- <filePath>"]},
@@ -87,7 +87,7 @@
 		{
 			"name": "squash the last X commits",
 			"description" : [
-				"git reset --soft HEAD~x"
+				"git reset --soft HEAD~x # https://stackoverflow.com/a/5201642"
 			]
 		}
 	]
