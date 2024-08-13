@@ -22,5 +22,5 @@ export PATH="/opt/platform-tools_r33.0.3:$PATH"
 
 export PATH="/opt/commands/bin:$PATH"
 
-alias gcfiles="git status | grep "modified:" | awk '{print $2}'"
+alias gcfiles="git status | grep 'modified:'  --line-buffered | awk '{print \$2}' | tr '\n' ' ' | xclip -r -selection c"
 export GPG_TTY=$(tty)
