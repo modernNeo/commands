@@ -16,7 +16,7 @@
 					"lsof -i :<portNumber> | grep LISTEN",
 					"ss -tunlp | grep <portNumber>"
 				],
-			"exec": "false"
+			"exec": false
 		},
 		{
 			"name": "open archive folders",
@@ -26,7 +26,32 @@
 					"tar xvf dropbox.tar.gz -C /opt/",
 					"tar -xf file.tar.xz -C /opt/"
 				],
-			"exec": "false"
+			"exec": false
+		},
+		{
+			"name" : "update",
+			"description" :
+				[
+					"sudo apt-get update && sudo apt-get upgrade"
+				],
+			"exec": true
+		},
+		{
+			"name": "stop/remove all containers",
+			"description" :
+				[
+					"docker stop $(docker ps -a -q)",
+					"docker rm $(docker ps -a -q)"
+				],
+			"exec": false
+		},
+		{
+			"name":"clean apt cache",
+			"description":
+				[
+					"sudo apt-get clean"
+				],
+			"exec": true
 		},
 		{
 			"name":"git",
