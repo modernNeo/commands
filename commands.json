@@ -59,7 +59,10 @@
     },
     {
       "name": "location of desktop entry",
-      "description": ["~/.local/share/applications/program.desktop"],
+      "description": [
+	      "~/.local/share/applications/",
+	      "/usr/share/applications/"
+      ],
       "exec": "false"
     }
   ]
