@@ -64,6 +64,13 @@
 	      "/usr/share/applications/"
       ],
       "exec": "false"
+    },
+    {
+      "name" : "Load Angular CLI autocompletion.",
+      "description" : [
+        "source <(ng completion script)"
+      ],
+      "exec" : "false"
     }
   ]
 }
