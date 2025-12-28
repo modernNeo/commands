@@ -25,3 +25,5 @@ export PATH="/opt/commands/bin:$PATH"
 alias gcfiles="git status | grep 'modified:'  --line-buffered | awk '{print \$2}' | tr '\n' ' ' | xclip -r -selection c"
 export GPG_TTY=$(tty)
 alias update="sudo apt-get update && sudo apt-get upgrade"
+
+alias ipip="python -m ensurepip --upgrade"
