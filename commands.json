@@ -60,8 +60,8 @@
     {
       "name": "location of desktop entry",
       "description": [
-	      "~/.local/share/applications/",
-	      "/usr/share/applications/"
+	      "location of .desktop file: ~/.local/share/applications OR /usr/share/applications/",
+	      "location of icon file: /usr/share/icons/hicolor/512x512/apps/"
       ],
       "exec": "false"
     },
