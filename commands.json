@@ -71,6 +71,10 @@
         "source <(ng completion script)"
       ],
       "exec" : "false"
+    },{
+    	"name" : "Penned Display Program",
+	"description":["Run the daemon by invoking 'otd-daemon', or by enabling the systemd user service opentabletdriver.service"],
+	"exec" : false
     }
   ]
 }
